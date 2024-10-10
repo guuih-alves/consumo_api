@@ -1,0 +1,281 @@
+body{
+   margin: 0; 
+   padding: 0;
+   background: rgba(242, 242, 242, 1);
+   ;
+}
+
+.container{
+    display: grid;    /* Cria a propriedade para dividir os elementos */
+    grid-auto-flow: column;    /* Determina que elementos serao dividos em colunas  */
+    height: 100px;
+    width: auto;
+    grid-auto-columns: 1fr;
+    background: rgba(12, 112, 242, 1);
+}
+
+#header{
+    margin-left: 56px;
+    margin-top: 21px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60.51px;
+}
+
+#menu{
+    margin-top: 36px;
+    justify-content: space-between;   /* Os itens são distribuídos uniformemente dentro do contêiner*/
+    text-align: right;   /* Alinha o texto para a direita */
+    margin-right: 69px;
+}
+
+#menu ul{ 
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;     /* Exibir elementos na mesma linha */
+    margin-left: 45px;     /* Definindo o espaçamento entre elementos */
+
+}
+
+#menu a{
+    font-size: 25px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 49px;
+    text-decoration: none;    /* Sem decoração no texto */
+}
+
+.intermediario{
+    display: flex;
+    justify-content: center;   /* Ajusta os elementos do grid ao centro*/
+    margin-top: 124px;
+
+}
+
+
+.intermediario h2{
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+#texto{
+    width: 879px;
+    height: 282px;
+}
+
+.newform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    background: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    width: 859px;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 133px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 104px;
+}
+
+#form-group2{
+
+    margin-left: 104px;
+    margin-right: 133px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+#form-group2 input{
+    width: 296px;
+    height: 56px;
+}
+
+form input{
+    border-radius: 10px;
+    width: 630px;
+    height: 56px;
+    font-size: 20px ;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(242, 242, 242, 0.9);
+    align-items: baseline;
+    
+}
+
+form label{
+    
+    font-family: "Inter", sans-serif;
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    line-height: 30.26px;
+    text-align: start;
+  
+}
+
+form input::placeholder{
+    color: rgba(57,57,57,0.5)
+}
+
+button[type="button"]{
+    background-color: rgba(12, 112, 242, 0.9);
+    width: 630px;
+    height: 56px;
+    cursor: pointer;
+    margin-top: 99px;
+    margin-bottom: 82px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 600px;
+    border-radius: 10px;
+    margin-left: 96px;
+    
+}
+
+#busca-cep{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+#busca-tempo{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.dados-cep{
+    display: grid;
+    place-items: center;
+
+ }
+
+#texto-cep{
+   /* display: grid;    /* Cria a propriedade para dividir os elementos */
+   /* grid-auto-flow: column; */
+
+   display: flex;
+   flex-flow: row;
+   place-items: center;
+   justify-content:space-evenly;
+   /* margin-left: 22%; */
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
+   background-color: #0C70F2;
+   color: white;
+   height: 40px;
+   width: 850px;
+   font-size: 13px;
+   font-family: 'inter';
+
+}
+
+.caixa-cep{
+
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content:space-evenly;
+    /* margin-left: 22%; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: white;
+    height: 40px;
+    width: 850px;
+  
+    align-items: center;
+  
+}
+
+.caixa-cep > input{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'inter';
+    outline: none;
+    border: none;
+}
+
+
+
+
+#label-tempo{
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+    margin-top: 40px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-color: blue;
+}
+
+#label-tempo > input{
+
+    text-align: center;
+    border-color: blue;
+    height: 40px;
+    width: 850px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 1px solid #0C70F2;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.rodape{
+    margin-top: 36px;
+    justify-content: space-between;   /* Os itens são distribuídos uniformemente dentro do contêiner*/
+    text-align: right;   /* Alinha o texto para a direita */
+    margin-right: 20px;
+}
+
+.rodape ul{ 
+    margin: 0;
+    padding: 0;
+}
+
+.rodape li {
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;     /* Exibir elementos na mesma linha */
+    margin-left: 45px;     /* Definindo o espaçamento entre elementos */
+
+}
+
+.rodape a{
+    font-size: 25px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 49px;
+    text-decoration: none;    /* Sem decoração no texto */
+}

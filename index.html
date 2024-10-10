@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Desafio 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    </script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="header">
+                Dnc Weather
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#services">Endereços</a></li>
+                    <li><a href="#contact">Previsão do Tempo</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="intermediario">
+            <div id="texto">
+                <h2>Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.
+            </div>
+            <div id="nuvem">
+                <img src="./assets/nuvem.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="newform">
+        <form>
+            <div class="form-group">
+                <label>Primeiro Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu primeiro nome">
+            </div>
+
+            <div class="form-group">
+                <label>E-mail:</label>
+                <input type="email" id="email" placeholder="Insira seu e-mail">
+            </div>
+
+            <div class="form-group">
+                <label>Digite o CEP:</label>
+                <input type="text" id="cep" placeholder="Insira o CEP">
+            </div>
+
+            <div class="form-group">
+                <label>Digite a latitude e longitude para saber a previsão:</label>
+            </div>
+
+            <div id="form-group2">
+
+                <input type="text" id="latitude" placeholder="Latitude">
+                <input type="text" id="longitude" placeholder="Longitude">
+            </div>
+            <button type="button" onclick="getPrevisao()" >Acessar</button>
+        </form>  
+    </div>
+    
+
+</section>
+
+<section>
+
+    <div id="busca-cep">
+    <h1>Resultado da busca por CEP:</h1>
+    <img src="./assets/local.png" alt="">
+</div>
+
+    <div class="dados-cep">
+        <div id="texto-cep">
+        <label for="rua" class="col-sm-2 col-form-label">Logradouro/Nome</label>
+        <label for="bairro" class="col-sm-2 col-form-label">Bairro/Distrito</label>
+        <label for="cidade" class="col-sm-2 col-form-label">Localidade/UF</label>
+
+        </div>
+    
+        <span class="caixa-cep"">
+            <input type="text" class="form-control" id="rua">
+            <input type="text" class="form-control" id="bairro">
+            <input type="text" class="form-control" id="cidade">
+          </span>
+    </div>
+            
+</section>
+           
+<div id="busca-tempo">
+    <h1>Previsão do tempo na região:</h1>
+    <img src="./assets/tempo.png" alt="">
+</div>
+
+    <div id="label-tempo">   
+        <input type="text" readonly class="form-control" id="cloud">
+    </div>
+
+
+    <section>
+        <footer class="container">
+    
+                <ul class="rodape">
+                <li><a href="">Termos de Uso </a></li>
+                <li><a href="">|</a></li>
+                <li><a href="">Política de Privacidade</a></li>
+            </ul>
+            
+        </footer>
+    </section>
+         
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
